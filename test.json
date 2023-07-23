@@ -1,0 +1,19 @@
+{
+	"name": "test",
+	"root_dir": "~/Projects/coding/rust/axum/",
+	"windows": [
+		{
+			"title": "editor",
+			"cmd": "v"
+		},
+		{
+			"title": "bacon",
+			"cmd": "bacon"
+
+		},
+		{
+			"title": "run",
+			"cmd": "fish"
+		}
+	]
+}
