@@ -15,8 +15,6 @@ use anyhow::Result;
 
 use walkdir::WalkDir;
 
-
-
 mod serialize;
 
 struct ConfigBuilder {
@@ -75,10 +73,10 @@ fn main() -> Result<()> {
 			let config = config_builder.get_config()?;
 			println!("{config:#?}");
 		} else {
-			println!("config does not exist");
+			eprintln!("config does not exist");
 		}
 	} else {
-		println!("please provide a name");
+		eprintln!("please provide a name");
 	}
 
 	Ok(())
